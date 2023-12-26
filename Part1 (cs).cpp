@@ -171,3 +171,141 @@ back:
         goto back;
     }
     }
+if(Check_Game()){
+        score_person_1 ++;
+        End_Game(a,b);
+    }
+    else if(!Check_Game()){
+        Display_board();
+        cout <<"\t\t\t\t\t\t"<< b << "'s Turn " << endl;
+    start:
+        cout << "\t\t\t\t\t\t "<<b << " Enter any number from the board : ";
+        input_2=getch();
+
+        switch (input_2)
+        {
+        case '1':
+        {
+            if (display[0][0] == '+')
+            {
+                cout << "\t\t\t\t\t\tWrong Entry. IT'S ALREADY TAKEN !!" << endl;
+                goto start;
+            }
+            else
+            {
+                display[0][0] = '-';
+            }
+        }
+        break;
+        case '2':
+        {
+            if (display[0][1] == '+')
+            {
+                cout << "\t\t\t\t\t\tWrong Entry. IT'S ALREADY TAKEN !!" << endl;
+                goto start;
+            }
+            else
+            {
+                display[0][1] = '-';
+            }
+        }
+        break;
+        case '3':
+        {
+            if (display[0][2] == '+')
+            {
+                cout << "\t\t\t\t\t\tWrong Entry. IT'S ALREADY TAKEN !!" << endl;
+                goto start;
+            }
+            else
+            {
+                display[0][2] = '-';
+            }
+        }
+        break;
+        case '4':
+        {
+            if (display[1][0] == '+')
+            {
+                cout << "\t\t\t\t\t\tWrong Entry. IT'S ALREADY TAKEN !!" << endl;
+                goto start;
+            }
+            else
+            {
+                display[1][0] = '-';
+            }
+        }
+        break;
+        case '5':
+        {
+            if (display[1][1] == '+')
+            {
+                cout << "\t\t\t\t\t\tWrong Entry. IT'S ALREADY TAKEN !!" << endl;
+                goto start;
+            }
+            else
+            {
+                display[1][1] = '-';
+            }
+        }
+        break;
+        case '6':
+        {
+            if (display[1][2] == '+')
+            {
+                cout << "\t\t\t\t\t\tWrong Entry. IT'S ALREADY TAKEN !!" << endl;
+                goto start;
+            }
+            else
+            {
+                display[1][2] = '-';
+            }
+        }
+        break;
+        case '7':
+        {
+            if (display[2][0] == '+')
+            {
+                cout <<"\t\t\t\t\t\tWrong Entry. IT'S ALREADY TAKEN !!" << endl;
+                goto start;
+            }
+            else
+            {
+                display[2][0] = '-';
+            }
+        }
+        break;
+        case '8':
+        {
+            if (display[2][1] == '+')
+            {
+                cout << "\t\t\t\t\t\tWrong Entry. IT'S ALREADY TAKEN !!" << endl;
+                goto start;
+            }
+            else
+            {
+                display[2][1] = '-';
+            }
+        }
+        break;
+        case '9':
+        {
+            if (display[2][2] == '+')
+            {
+                cout << "\t\t\t\t\t\tWrong Entry. IT'S ALREADY TAKEN !!" << endl;
+                goto start;
+            }
+            else
+            {
+                display[2][2] = '-';
+            }
+        }
+        break;
+        default:
+        {
+            cout<<endl<<endl;
+            cout << "\t\t\t\t\t\t Wrong Entry " << endl;
+            cout << "\t\t\t\t\t\t Try Again ;) ";
+            goto start;
+        }
+        }
