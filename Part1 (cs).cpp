@@ -309,3 +309,16 @@ if(Check_Game()){
             goto start;
         }
         }
+Display_board();
+        if(Check_Game()){
+            score_person_2 ++;
+            End_Game(a,b);
+        }
+        else if (!Check_Game()){
+            if(Check_Draw()){
+                End_Game(a,b);
+            }
+        }
+    }
+    Game_play(a,b);
+}
