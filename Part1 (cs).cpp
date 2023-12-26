@@ -322,3 +322,53 @@ Display_board();
     }
     Game_play(a,b);
 }
+bool Check_Game()
+{
+    // For Vertical Victory;
+    if ((display[0][0] == '+' && display[1][0] == '+' && display[2][0] == '+') ||
+        (display[0][0] == '-' && display[1][0] == '-' && display[2][0] == '-'))
+    {
+        return true;
+    }
+    if ((display[0][1] == '+' && display[1][1] == '+' && display[2][1] == '+') ||
+        (display[0][1] == '-' && display[1][1] == '-' && display[2][1] == '-'))
+    {
+        return true;
+    }
+    if ((display[0][2] == '+' && display[1][2] == '+' && display[2][2] == '+') ||
+        (display[0][2] == '-' && display[1][2] == '-' && display[2][2] == '-'))
+    {
+        return true;
+    }
+
+    // For Horizontal Victory;
+    if ((display[0][0] == '+' && display[0][1] == '+' && display[0][2] == '+') ||
+        (display[0][0] == '-' && display[0][1] == '-' && display[0][2] == '-'))
+    {
+        return true;
+    }
+    if ((display[1][0] == '+' && display[1][1] == '+' && display[1][2] == '+') ||
+        (display[1][0] == '-' && display[1][1] == '-' && display[1][2] == '-'))
+    {
+        return true;
+    }
+    if ((display[2][0] == '+' && display[2][1] == '+' && display[2][2] == '+') ||
+        (display[2][0] == '-' && display[2][1] == '-' && display[2][2] == '-'))
+    {
+        return true;
+    }
+
+    // For Diagonal Victory;
+    if ((display[0][0] == '+' && display[1][1] == '+' && display[2][2] == '+') ||
+        (display[0][0] == '-' && display[1][1] == '-' && display[2][2] == '-'))
+    {
+        return true;
+    }
+    if ((display[0][2] == '+' && display[1][1] == '+' && display[2][0] == '+') ||
+        (display[0][2] == '-' && display[1][1] == '-' && display[2][0] == '-'))
+    {
+        return true;
+    }
+
+    return false;
+}
