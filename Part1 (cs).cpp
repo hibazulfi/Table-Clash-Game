@@ -372,3 +372,10 @@ bool Check_Game()
 
     return false;
 }
+bool Check_Draw(){
+    if(display[0][0] != '1' && display[1][0] !='4' && display[2][0] != '7' && display[0][1] != '2' && display[1][1] != '5' && display[2][1] != '8' && display[0][2] != '3' && display[1][2] != '6' && display[2][2] != '9'){
+        status = "Draw";
+        return true;
+    }
+    return false;
+}
