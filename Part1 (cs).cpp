@@ -385,11 +385,11 @@ void End_Game(string a, string b)
     cout<<endl<<endl<<endl;
     if (score_person_1 > score_person_2)
     {
-        cout << "\t\t\t\t\t\t Congratulations " << a << "! You won the game." << endl;
+        cout << "\t\t\t\t\t\t Congratulations " << a << "! You WON the game." << endl;
     }
     else if (score_person_1 < score_person_2)
     {
-        cout << "\t\t\t\t\t\t Congratulations " << b << "! You won the game." << endl;
+        cout << "\t\t\t\t\t\t Congratulations " << b << "! You WON the game." << endl;
     }
     else
     {
@@ -418,7 +418,7 @@ void End_Game(string a, string b)
     {
         system("CLS");
         cout<<endl<<endl<<endl;
-        cout << "\t\t\t\t\t\t Thanks for playing!" << endl;
+        cout << "\t\t\t\t\t\t Thanks for playing <3" << endl;
         exit(0);
     }
 }
