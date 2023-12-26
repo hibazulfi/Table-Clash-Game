@@ -395,3 +395,31 @@ void End_Game(string a, string b)
     {
         cout << "\t\t\t\t\t\t It's a draw!" << endl;
     }
+    score_person_1 = 0;
+    score_person_2 = 0;
+
+    char choice;
+    cout<<endl<<endl<<endl;
+    cout << "\t\t\t\t\t\t Do you want to play again? Y/N : ";
+    cin >> choice;
+    if (choice == 'Y' || choice == 'y')
+    {
+        char num= '1';
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                display [i] [j] = num;
+                num++;
+            }
+        }
+        Display_board();
+        Game_play(a, b);
+    }
+    else if(choice == 'N' || choice == 'n')
+    {
+        system("CLS");
+        cout<<endl<<endl<<endl;
+        cout << "\t\t\t\t\t\t Thanks for playing!" << endl;
+        exit(0);
+    }
+}
+
