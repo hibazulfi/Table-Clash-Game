@@ -379,3 +379,19 @@ bool Check_Draw(){
     }
     return false;
 }
+void End_Game(string a, string b)
+{
+    system("CLS");
+    cout<<endl<<endl<<endl;
+    if (score_person_1 > score_person_2)
+    {
+        cout << "\t\t\t\t\t\t Congratulations " << a << "! You won the game." << endl;
+    }
+    else if (score_person_1 < score_person_2)
+    {
+        cout << "\t\t\t\t\t\t Congratulations " << b << "! You won the game." << endl;
+    }
+    else
+    {
+        cout << "\t\t\t\t\t\t It's a draw!" << endl;
+    }
