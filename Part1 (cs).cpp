@@ -427,9 +427,9 @@ int main(){
     cout<<endl<<endl<<endl<<"\t\t\t\t\t                    TABLE-CLASH GAME                    "<<endl<<endl<<endl<<endl;
 
     string palyer1,player2;
-    cout<<"\t\t\t Enter the name of Player 1 : ";
+    cout<<"\t\t\t Enter the name of Player 1   ";
     getline(cin,player1);
-    cout<<"\t\t\t Enter the name of Player 2 : ";
+    cout<<"\t\t\t Enter the name of Player 2   ";
     getline(cin,player2);
 
     Display_board();
